@@ -1,0 +1,35 @@
+<!-- sidebar -->
+
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <p>Menu</p>
+    <p *ngIf="showFiller">Nuestras Opciones.</p>
+    <button (click)="showFiller = !showFiller" mat-raised-button>
+      Nuestras Opciones
+    </button>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+      <!-- toolbar -->
+
+      <mat-toolbar color="primary">
+    <button (click)="drawer.toggle()"
+    mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Cursos</span>
+    <span class="example-spacer"></span>
+    <!-- <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon> -->
+    <!-- </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button> -->
+  </mat-toolbar>
+    <main class="p-3">
+      <app-home></app-home>
+    </main>
+
+  </div>
+
+</mat-drawer-container>
