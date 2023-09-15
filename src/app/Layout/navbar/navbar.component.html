@@ -2,10 +2,10 @@
 
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="example-sidenav" mode="side">
-    <p>Menu</p>
-    <p *ngIf="showFiller">Nuestras Opciones.</p>
+    <p>Instituto</p>
+    <p *ngIf="showFiller">Bienvenido</p>
     <button (click)="showFiller = !showFiller" mat-raised-button>
-      Nuestras Opciones
+      Menu
     </button>
   </mat-drawer>
 
@@ -19,12 +19,7 @@
     </button>
     <span>Cursos</span>
     <span class="example-spacer"></span>
-    <!-- <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-      <mat-icon>favorite</mat-icon> -->
-    <!-- </button>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-      <mat-icon>share</mat-icon>
-    </button> -->
+
   </mat-toolbar>
     <main class="p-3">
       <app-home></app-home>
