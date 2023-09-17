@@ -27,6 +27,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatFormFieldModule,
     MatInputModule,
     MatDialogModule,
+
   ],
   exports: [NavbarComponent, MainWrapperComponent],
 })
