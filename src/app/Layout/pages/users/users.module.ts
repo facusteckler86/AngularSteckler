@@ -4,6 +4,9 @@ import { UsersComponent } from './users.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { DialogosComponent } from './dialogos/dialogos.component';
 import { CoreModule } from 'src/app/core/core.module';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 
 
@@ -11,7 +14,11 @@ import { CoreModule } from 'src/app/core/core.module';
 @NgModule({
   declarations: [UsersComponent, DialogosComponent],
   imports: [
-    CommonModule,CoreModule,
+    CommonModule,
+    CoreModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatButtonModule,
   ],
   exports: [UsersComponent, DialogosComponent],
 })
