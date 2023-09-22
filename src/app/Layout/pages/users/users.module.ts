@@ -7,6 +7,7 @@ import { CoreModule } from 'src/app/core/core.module';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { TablasComponent } from '../../navbar/pages/users/dialogos/tablas/tablas.component';
 
 
 
@@ -19,6 +20,7 @@ import { MatButtonModule } from '@angular/material/button';
     MatFormFieldModule,
     MatIconModule,
     MatButtonModule,
+    TablasComponent,
   ],
   exports: [UsersComponent, DialogosComponent],
 })

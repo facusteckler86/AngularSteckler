@@ -11,6 +11,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIcon, MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { TablasComponent } from './navbar/pages/users/dialogos/tablas/tablas.component';
 
 
 
@@ -27,6 +28,7 @@ import { MatButtonModule } from '@angular/material/button';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
+    TablasComponent,
   ],
   exports: [NavbarComponent, MainWrapperComponent],
 })

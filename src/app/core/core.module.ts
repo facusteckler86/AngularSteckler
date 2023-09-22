@@ -17,9 +17,7 @@ import { FullNamePipe } from './pipe/full-name.pipe';
 
 
 @NgModule({
-  declarations: [
-    FullNamePipe
-  ],
+  declarations: [FullNamePipe],
   imports: [
     CommonModule,
     MatButtonModule,
@@ -34,6 +32,7 @@ import { FullNamePipe } from './pipe/full-name.pipe';
     MatFormFieldModule,
     MatDialogModule,
     FormsModule,
+    FullNamePipe,
   ],
 })
 export class CoreModule {}
